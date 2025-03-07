@@ -41,7 +41,7 @@ header .logo-section .logo {
   color: var(--text);
   font-size: 2rem;
   font-family: sans-serif;
-  font-weight: 550;
+  font-weight: 551;
 }
 .logo {
   z-index: 1000;
