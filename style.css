@@ -68,6 +68,15 @@ header .hamburger-menu {
   margin: 8px;
   transition: 0.3s;
 }
+.hamburger-menu.active .hamburger-icon {
+  opacity: 0;
+}
+.hamburger-menu.active::after {
+  transform: rotate(45deg) translate(-2px, -5px);
+}
+.hamburger-menu.active::before {
+  transform: rotate(-45deg) translate(-9px, 12px);
+}
 
 .menu-links {
   display: block;
@@ -153,11 +162,11 @@ section .home-details {
 .home-img::after {
   content: "";
   width: 100%;
-  height: 10%;
+  height: 20%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to top, var(--accent) 20%, transparent);
+  background-image: linear-gradient(to top, var(--secondary) 30%, transparent);
 }
 .home-img-container .home-img img {
   width: 100%;
@@ -303,10 +312,10 @@ section .home-details {
 @media (min-width: 72rem) {
   section {
     padding: 0 rem;
-    background: red;
+    /* background: red; */
   }
   .home-content {
-    background: green;
+    /* background: green; */
   }
   .home-content-details {
     margin: 0;
